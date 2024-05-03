@@ -15,6 +15,7 @@ const Navbar = () => {
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/products"}>Products</NavLink>
           <NavLink to={"/produc"}>Еще че то</NavLink>
+          <NavLink to={"/korzina"}>koкяштф</NavLink>
         </div>
       </div>
     </div>
