@@ -7,8 +7,10 @@ const Navbar = () => {
       <div className={style.cont}>
         <div className={style.nav_top}>
           <h1>p</h1>
-          <h1>BEMA</h1>
-          <h1>q</h1>
+          <h1>EBA</h1>
+          <div>
+            <NavLink to={"/registor"}>Мой аккаунт</NavLink>
+          </div>
         </div>
         <hr className={style.hr} />
         <div className={style.nav_bottom}>
