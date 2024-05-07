@@ -3,24 +3,39 @@
   width: 100%;
   height: 85vh;
 }
-.registor form {
+.form {
   width: 20vw;
   height: 50vh;
-  background-color: antiquewhite;
-padding: 25px;
-margin: 50px auto;
+  background-color: #e8e6e6;
+  padding: 25px;
+  margin: 50px auto;
+}
+.form p {
+  text-align: center;
+}
+.btn {  
+  display: flex;
+  /* margin: auto; */
+  /* flex-direction: column;     */
+}
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.btn button {
+  margin: auto;
+  width: 60%;
+}
+.btn a {
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  text-decoration: none;
+}
 
+.form input {
+  margin: 10px 0;
+  background: #e8e6e6;
 }
-.btn{
-display: flex;
-/* margin: auto; */
-flex-direction: column;
 
-}
-.btn{
-    text-align: center;
-}
-.btn a{
-padding: 5px;
-    text-decoration: none;
-}
