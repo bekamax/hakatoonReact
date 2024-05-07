@@ -16,8 +16,8 @@ const Navbar = () => {
         <div className={style.nav_bottom}>
           <NavLink to={"/"}>Home</NavLink>
           <NavLink to={"/products"}>Products</NavLink>
-          <NavLink to={"/produc"}>Еще че то</NavLink>
-          <NavLink to={"/korzina"}>koкяштф</NavLink>
+          <NavLink to={"/detailed"}>detailed</NavLink>
+          <NavLink to={"/basket"}>basket</NavLink>
         </div>
       </div>
     </div>
