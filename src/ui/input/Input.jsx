@@ -15,6 +15,7 @@ export const Input = ({
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      
     />
   );
 };
