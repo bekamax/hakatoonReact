@@ -7,6 +7,14 @@
       "password": "12345678",
       "password_confirm": "12345678",
       "id": 1
+    },
+    {
+      "name": "beka",
+      "phone": "+996 705 190 750",
+      "email": "beka@gmail.com",
+      "password": "123456",
+      "password_confirm": "123456",
+      "id": 2
     }
   ]
 }

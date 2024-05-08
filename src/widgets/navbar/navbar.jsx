@@ -1,16 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
+import { API } from "../../pages/logIn/Login";
 const Navbar = () => {
+  const id = localStorage.getItem("currentUser");
+
+  let dataName = null;
+
+  const [us, setUs] = useState(null);
+
+  async function getOneUser(id) {
+    console.log(id);
+    if (id) {
+      const { data } = await axios.get(`${API}/${id}`);
+      setUs(data.name);
+    }
+  }
+
+  useEffect(() => {
+    getOneUser(id);
+  }, []);
+
   return (
     <div className={style.navbar}>
       <div className={style.cont}>
         <div className={style.nav_top}>
           <h1>p</h1>
           <h1>EBA</h1>
-          <div>
-            <NavLink to={"/registor"}>Мой аккаунт</NavLink>
-          </div>
+          {id ? (
+            <NavLink to={`/profile`}>{us ? us : ""}</NavLink>
+          ) : (
+            <div>
+              <NavLink to={"/registor"}>Мой аккаунт</NavLink>
+            </div>
+          )}
         </div>
         <hr className={style.hr} />
         <div className={style.nav_bottom}>
