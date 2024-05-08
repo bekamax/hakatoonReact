@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./home.module.css";
 import Button from "../../ui/buttons/Button";
+
+import FooterPage from "../footer/FooterPage";
+
 import OurBrand from "../ourBrand/OurBrand";
+
 const Home = () => {
   return (
     <div className={styles.home}>
@@ -33,8 +37,12 @@ const Home = () => {
         </div>
       </div>
       <div>
+
+       
+
         {/* secondPage  */}
         <OurBrand />
+        <FooterPage />
       </div>
     </div>
   );
